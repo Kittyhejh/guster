@@ -1,0 +1,429 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+.img-responsive {
+  width: auto;
+  height: auto;
+}
+
+img {
+  display: block;
+  margin: 0px auto;
+}
+
+
+/*
+----------------------------------------------------------------------------------------------------
+ HOMEPAGE STYLES
+----------------------------------------------------------------------------------------------------
+*/
+
+/*
+----------------------------------------------------------------------------------------------------
+ ABOUT STYLES
+----------------------------------------------------------------------------------------------------
+*/
+
+.about-introduction1{
+  font-size:25px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.about-introduction2{
+  font-size:25px;
+  color: #ffffff;
+  /* padding-left: 100px; */
+  font-weight: bold;
+}
+
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:20px;
+}
+
+.background-about{
+  background-color:#5DC3B2;
+}
+
+.MP {
+  width: 100%;
+  top: 0;
+}
+
+.MP > .image-responsive {
+  width: 250px;
+  height: 525px;
+  margin: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.MP:hover {
+  background: #efefef;
+}
+
+.MP:hover > .image-responsive {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.member-name{
+  margin: auto;
+  text-align: center;
+  font-size:18px;
+  color: #ffffff;
+  font-weight:bold;
+}
+
+.MP:HOVER >.member-name{
+  margin: auto;
+  text-align: center;
+  font-size:18px;
+  color: black;
+  font-weight:bold;
+}
+.role{
+  margin: auto;
+  text-align: center;
+  font-size:18px;
+  color: #ffffff;
+  font-weight:lighter;
+}
+
+.MP:HOVER >.role{
+  margin: auto;
+  text-align: center;
+  font-size:18px;
+  color: black;
+  font-weight:lighter;
+}
+
+.columns {
+    margin-left: 8%;
+    margin-right: 6%;
+    margin-top: 1%;
+}
+/*
+----------------------------------------------------------------------------------------------------
+ DISOGRAPHY STYLES
+----------------------------------------------------------------------------------------------------
+*/
+.background-discography{
+  background-color:#F5B24B;
+  width: auto;
+  height: auto;
+  overflow:auto;
+}
+
+
+/* .album-container{
+  position: relative;
+  margin: auto;
+  padding:0 150px;
+  overflow:auto;
+  display: block;
+} */
+
+/* .album{
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/*
+@media (min-width: 1024px) {
+  .album {
+    text-align: left;
+  }
+} */
+
+.album-cover{
+  max-width: 400px;
+  max-height:400px;
+  border-radius: 8px;
+  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+  transition: all .3s ease-in-out;
+}
+
+/* @media (min-width: 1024px){
+  .album-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+} */
+
+.album-cover:hover{
+  max-width: 450px;
+  max-height: 450px;
+  box-shadow: 0 75px 175px rgba(0, 0, 0, 0.4);
+}
+
+/* ul.album-details{
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  list-style: none;
+} */
+
+/* @media (min-width: 1024px){
+  ul.album-details {
+    margin-left: 320px;
+  }
+} */
+
+.album-title{
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+ul.track-listings{
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+ul.track-listings > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+span.track-number {
+  margin-right: 10px;
+}
+
+ul-track-listings > li > .track-time {
+  text-align: right;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+ MEDIA STYLES
+----------------------------------------------------------------------------------------------------
+*/
+.background-media{
+  background-color:#F5B24B;
+}
+.media-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.media-card-wrapper {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.media-card{
+  width: 225px;
+  height: 225px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 0;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.media-card > img {
+  width: 100%;
+  height: 100%;
+}
+
+.media-card:hover {
+  width: 250px;
+  height: 250px;
+  z-index: 10;
+  box-shadow: 0 50px 125px rgba(0, 0, 0, 0.4);
+}
+
+.media-list > iframe {
+  margin-bottom: 50px;
+}
+
+.subtitle{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size:30px;
+  line-height: 1.5;
+  color: #212529;
+    color: #ffffff;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+ MERCH STYLES
+----------------------------------------------------------------------------------------------------
+*/
+.background-merch{
+  background-color:#0F3142;
+}
+
+.product-container{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1152px;
+  width: 100%;
+}
+
+.product-card {
+/*  padding: 0%;
+  flex-grow: 0;*/
+  width: 25%;
+ text-align: center;
+}
+
+.product-image {
+  max-width: 100%;
+}
+
+.product-name{
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+}
+
+.product-info {
+  height: 100px;
+}
+
+.price{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+}
+/*
+----------------------------------------------------------------------------------------------------
+ TOUR DATES STYLES
+----------------------------------------------------------------------------------------------------
+*/
+.tour-dates-table{
+    overflow-x: auto;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(33,37,41,0.3)
+    text-align: center;
+}
+.background-tour-dates{
+  background-color:#ec6d65;
+}
+.bg-light {
+    background-color: white!important;
+}
+
+.navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 10px;
+    list-style: none;
+    font-size: 20px;
+    height: 75px;
+}
+.navbar>.container .navbar-brand {
+    margin-top:0.60rem;
+}
+.navbar>.container .navbar-menu {
+    /* margin-left: 6rem; */
+    /* margin-right: -1rem; */
+    margin-top:0.80rem;
+}
+.navbar-item{
+    padding-right: 50px;
+}
+
+.tour-dates-cover{
+    width:1000px;
+    height:800px;
+}
+
+
+.title {
+  font-family: Rokkitt;
+  font-size: 60px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 4.3px;
+  color: #ffffff;
+  margin-top:140px;
+  margin-bottom:10px;
+}
+table {
+    border-collapse: collapse;
+    width:900px;
+    height:550px;
+    /* background-color: #f4f1e7; */
+    box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+}
+
+th, td {
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 3px;
+    font-size: 22px;
+}
+
+
+th {
+    /* background-color: #4CAF50; */
+    color: white;
+}

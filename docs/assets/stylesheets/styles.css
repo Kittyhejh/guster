@@ -1,0 +1,479 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 4.3px;
+  color: #ffffff;
+  margin-top:140px;
+  margin-bottom:10px;
+}
+
+.img-responsive {
+  width: auto;
+  height: auto;
+}
+
+img {
+  display: block;
+  margin: 0px auto;
+}
+
+.navbar-start{
+  margin:0 auto;
+}
+
+.navbar-item{
+  margin:0 2% 0 2%;
+}
+
+.container-title{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:20px;
+}
+/*
+----------------------------------------------------------------------------------------------------
+ HOMEPAGE STYLES
+----------------------------------------------------------------------------------------------------
+*/
+
+  .hero {
+    background-color: #EC6D65;
+  }
+
+  .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .left{
+    position: relative;
+    bottom:-140px;
+    left:-50px;
+  }
+  .right{
+    position: relative;
+    bottom:-140px;
+    right:-50px;
+  }
+
+  .image{
+    padding-top: 10%;
+  }
+
+.illustration{
+  width: 100%;
+  position: relative;
+  max-height: 535px;
+  height: 52vw;
+}
+
+.guster-mountain1{
+    height: 85%;
+    position: absolute;
+    left:0;
+    position: absolute;
+    -webkit-transition: all 720ms ease-out;
+    transition: all 720ms ease-out;
+    -webkit-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    transform: translateX(-50px);
+    bottom: 0;
+    z-index: 10;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+}
+
+.guster-mountain2{
+      height: 85%;
+      position: absolute;
+      right: 0;
+      position: absolute;
+      right: 0;
+      -webkit-transition: all 820ms ease-out;
+      transition: all 820ms ease-out;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+      bottom: 0;
+      z-index: 10;
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-align-items: flex-end;
+      -webkit-box-align: flex-end;
+      -ms-flex-align: flex-end;
+      align-items: flex-end;
+}
+
+.guster-sun{
+    height:100%;
+    position: absolute;
+    max-width: 550px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -70px;
+    z-index: 1;
+    height: 100%;
+    text-align: center;
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+}
+/*
+----------------------------------------------------------------------------------------------------
+ ABOUT STYLES
+----------------------------------------------------------------------------------------------------
+*/
+
+.about-introduction1{
+  font-size:25px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.about-introduction2{
+  font-size:25px;
+  color: #ffffff;
+  /* padding-left: 100px; */
+  font-weight: bold;
+}
+
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:0;
+}
+
+.background-about{
+  background-color:#5DC3B2;
+}
+
+.MP {
+  width: 100%;
+  top: 0;
+}
+
+.MP > .image-responsive {
+  width: 250px;
+  height: 525px;
+  margin: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.MP:hover {
+  background: #efefef;
+}
+
+.MP:hover > .image-responsive {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.member-name{
+  margin: auto;
+  text-align: center;
+  font-size:18px;
+  color: #ffffff;
+  font-weight:bold;
+}
+
+.MP:HOVER >.member-name{
+  margin: auto;
+  text-align: center;
+  font-size:18px;
+  color: black;
+  font-weight:bold;
+}
+.role{
+  margin: auto;
+  text-align: center;
+  font-size:18px;
+  color: #ffffff;
+  font-weight:lighter;
+}
+
+.MP:HOVER >.role{
+  margin: auto;
+  text-align: center;
+  font-size:18px;
+  color: black;
+  font-weight:lighter;
+}
+
+.columns {
+    margin-left: 4%;
+    margin-right: 6%;
+    margin-top: 1%;
+}
+
+.columns:not(:last-child){
+  margin-bottom:10rem;
+}
+/*
+----------------------------------------------------------------------------------------------------
+ DISOGRAPHY STYLES
+----------------------------------------------------------------------------------------------------
+*/
+.background-discography{
+  background-color:#F5B24B;
+  width: auto;
+  height: auto;
+  overflow:auto;
+}
+
+
+.album-cover{
+  max-width: 250px;
+  max-height:250px;
+  border-radius: 8px;
+  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+  transition: all .3s ease-in-out;
+}
+
+
+.album-cover:hover{
+  max-width: 300px;
+  max-height: 300px;
+  box-shadow: 0 75px 175px rgba(0, 0, 0, 0.1);
+}
+
+
+.album-title{
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+}
+
+ul.track-listings{
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+ul.track-listings > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+span.track-number {
+  margin-right: 10px;
+}
+
+ul-track-listings > li > .track-time {
+  text-align: right;
+}
+
+
+/*
+----------------------------------------------------------------------------------------------------
+ MEDIA STYLES
+----------------------------------------------------------------------------------------------------
+*/
+.background-media{
+  background-color:#F5B24B;
+}
+.media-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.media-card-wrapper {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.media-card{
+  width: 225px;
+  height: 225px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 0;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.media-card > img {
+  width: 100%;
+  height: 100%;
+}
+
+.media-card:hover {
+  width: 250px;
+  height: 250px;
+  z-index: 10;
+  box-shadow: 0 50px 125px rgba(0, 0, 0, 0.4);
+}
+
+.media-list > iframe {
+  margin-bottom: 50px;
+}
+
+.subtitle{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size:30px;
+  line-height: 1.5;
+  color: #212529;
+    color: #ffffff;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+ MERCH STYLES
+----------------------------------------------------------------------------------------------------
+*/
+.background-merch{
+  background-color:#0F3142;
+}
+
+.product-container{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1152px;
+  width: 100%;
+}
+
+.product-card {
+/*  padding: 0%;
+  flex-grow: 0;*/
+  width: 25%;
+ text-align: center;
+}
+
+.product-image {
+  max-width: 100%;
+}
+
+.product-name{
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+}
+
+.product-info {
+  height: 100px;
+}
+
+.price{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+}
+/*
+----------------------------------------------------------------------------------------------------
+ TOUR DATES STYLES
+----------------------------------------------------------------------------------------------------
+*/
+.tour-dates-table{
+    overflow-x: auto;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(33,37,41,0.3)
+    text-align: center;
+    width:900px;
+    height:550px;
+    background-color: #f4f1e7;
+    box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.5);
+}
+.background-tour-dates{
+  background-color:#ec6d65;
+}
+.bg-light {
+    background-color: white!important;
+}
+
+.tour-dates-cover{
+    width:1000px;
+    height:800px;
+} */
+
+
+th, td {
+    width:800px;
+    height:50px;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 3px;
+    font-size: 22px;
+}
+
+.columns:not(:last-child){
+  margin-bottom:2rem;
+}
+
+th {
+    /* background-color: #4CAF50; */
+    color: white;
+}
