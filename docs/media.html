@@ -6,17 +6,30 @@
   <meta name="author" content="Guster">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Guster</title>
-  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/normalize.min.css" />
   <!-- OPTIONAL IMPORTS -->
-  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/bulma.min.css" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
-  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/plugins/slick.css" />
-  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/plugins/slick-theme.css" />
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/plugins/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/plugins/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/plugins/lightbox.min.css" />
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <!-- END OPTIONAL IMPORTS -->
-  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/styles.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
 </head>
+  <style>
+      .column img {
+        border-radius: 8px;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+        transition: box-shadow .5s ease-in-out;
+      }
+
+      .column img:hover{
+        cursor: pointer;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+
 <body>
 <body class="background-media">
 
@@ -25,23 +38,23 @@
     <div class="container">
 
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <img src="./assets/images/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+          <a class="navbar-item" href="#">
+            <img src="./assets/images/navigation/logo.png" alt="Guster Logo" width="112" height="28">
           </a>
 
-          <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+          <a class="navbar-item is-hidden-desktop" href="https://www.facebook.com/guster/" target="_blank">
             <span class="icon" style="color: #3B5998;">
               <i class="fab fa-lg fa-facebook"></i>
             </span>
           </a>
 
-          <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+          <a class="navbar-item is-hidden-desktop" href="https://twitter.com/guster?lang=en" target="_blank">
             <span class="icon" style="color: #55acee;">
               <i class="fab fa-lg fa-twitter"></i>
             </span>
           </a>
 
-          <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+          <a class="navbar-item is-hidden-desktop" href="https://open.spotify.com/artist/34XlPCFfB4vT7P1ekWq9Jc" target="_blank">
             <span class="icon" style="color: #1db954;">
               <i class="fab fa-lg fa-spotify"></i>
             </span>
@@ -68,12 +81,12 @@
                   <span>Discography</span>
                 </a>
 
-                <a class="navbar-item bd-navbar-item-expo " href="media.html">
-                  <span>Media</span>
-                </a>
-
                 <a class="navbar-item bd-navbar-item-love " href="merch.html">
                   <span>Merch</span>
+                </a>
+
+                <a class="navbar-item bd-navbar-item-expo " href="media.html">
+                  <span>Media</span>
                 </a>
 
                 <a class="navbar-item bd-navbar-item-love " href="tour-dates.html">
@@ -82,17 +95,17 @@
               </div>
 
             <div class="navbar-end">
-              <a class="navbar-item is-hidden-mobile" href="https://github.com/jgthms/bulma" target="_blank">
+              <a class="navbar-item is-hidden-mobile" href="https://www.facebook.com/guster/" target="_blank">
                 <span class="icon" style="color: #3B5998;">
                   <i class="fab fa-lg fa-facebook"></i>
                 </span>
               </a>
-              <a class="navbar-item is-hidden-mobile" href="https://twitter.com/jgthms" target="_blank">
+              <a class="navbar-item is-hidden-mobile" href="https://twitter.com/guster?lang=en" target="_blank">
                 <span class="icon" style="color: #55acee;">
                   <i class="fab fa-lg fa-twitter"></i>
                 </span>
               </a>
-              <a class="navbar-item is-hidden-mobile" href="https://twitter.com/jgthms" target="_blank">
+              <a class="navbar-item is-hidden-mobile" href="https://open.spotify.com/artist/34XlPCFfB4vT7P1ekWq9Jc" target="_blank">
                 <span class="icon" style="color: #1db954;">
                   <i class="fab fa-lg fa-spotify"></i>
                 </span>
@@ -105,183 +118,248 @@
   </nav>
 
   <main class="background-media">
-      <div class="hero-body">
-        <div class="container">
+        <div class="container-title">
           <h1>
             MEDIA
           </h1>
         </div>
-      </div>
 
-      <div class="container">
+      <div class="container-subtitle">
           <h1 class="subtitle">Photos</h1>
       </div>
 
-      <div class="container">
-            <div class="media-list">
-              <div class="media-card-wrapper">
-                <a class="media-card" href="../assets/images/media-photos/980x.jpg" data-lightbox="deftones">
-                  <img src="../assets/images/media-photos/980x.jpg" />
-                </a>
-              </div>
-              <div class="media-card-wrapper">
-                <a class="media-card" href="./assets/images/media/2.png" data-lightbox="deftones">
-                  <img src="../assets/images/media-photos/guster about1.jpg" />
-                </a>
-              </div>
-              <div class="media-card-wrapper">
-                <a class="media-card" href="./assets/images/media/3.jpg" data-lightbox="deftones">
-                  <img src="../assets/images/media-photos/M1.jpg" />
-                </a>
-              </div>
-              <div class="media-card-wrapper">
-                <a class="media-card" href="./assets/images/media/4.jpg" data-lightbox="deftones">
-                  <img src="../assets/images/media-photos/M2.jpg" />
-                </a>
-              </div>
-              <div class="media-card-wrapper">
-                <a class="media-card" href="./assets/images/media/5.jpg" data-lightbox="deftones">
-                  <img src="../assets/images/media-photos/M6.jpg" />
-                </a>
-              </div>
-              <div class="media-card-wrapper">
-                <a class="media-card" href="./assets/images/media/6.jpg" data-lightbox="deftones">
-                  <img src="../assets/images/media-photos/M8.jpg" />
-                </a>
-              </div>
-              <div class="media-card-wrapper">
-                <a class="media-card" href="./assets/images/media/7.jpg" data-lightbox="deftones">
-                  <img src="../assets/images/media-photos/M9.jpg" />
-                </a>
-              </div>
-              <div class="media-card-wrapper">
-                <a class="media-card" href="./assets/images/media/8.jpg" data-lightbox="deftones">
-                  <img src="../assets/images/media-photos/M10.jpg" />
-                </a>
-              </div>
-              <div class="media-card-wrapper">
-                <a class="media-card" href="./assets/images/media/6.jpg" data-lightbox="deftones">
-                  <img src="../assets/images/media-photos/M11.jpg" />
-                </a>
-              </div>
-              <div class="media-card-wrapper">
-                <a class="media-card" href="./assets/images/media/7.jpg" data-lightbox="deftones">
-                  <img src="../assets/images/media-photos/M12.jpg" />
-                </a>
-              </div>
-              <div class="media-card-wrapper">
-                <a class="media-card" href="./assets/images/media/8.jpg" data-lightbox="deftones">
-                  <img src="../assets/images/media-photos/M13.jpg" />
-                </a>
-              </div>
-              <div class="media-card-wrapper">
-                <a class="media-card" href="./assets/images/media/8.jpg" data-lightbox="deftones">
-                  <img src="../assets/images/media-photos/M15.jpg" />
-                </a>
-              </div>
-            </div>
-          </div>
+<section class"section">
+    <div class="container">
+          <div class="columns">
 
-          <div class="container">
-              <h1 class="subtitle">Music Videos</h1>
-            </div>
-
-        <section class="section" >
-                <div class="image-carousel">
-                  <div><center>
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/eD0j1cfmO5s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  </center>
-                </div>
-                <div><center>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/YWLXETj6CSY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </center>
-              </div>
-              <div><center>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/PPhTpFtFmK4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </center>
-            </div>
-            <div><center>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/KB5Au84nPKA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </center>
-          </div>
-            <div><center>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/8eAB2R_gb64" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </center>
-          </div>
-          <div><center>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7k-VAlIPzKg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </center>
-        </div>
-
-                </div>
-                <div class="image-carousel1">
-                  <div><iframe width="560" height="315" src="https://www.youtube.com/embed/eD0j1cfmO5s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-                  <div><iframe width="560" height="315" src="https://www.youtube.com/embed/YWLXETj6CSY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-                  <div><iframe width="560" height="315" src="https://www.youtube.com/embed/PPhTpFtFmK4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-                  <div><iframe width="560" height="315" src="https://www.youtube.com/embed/KB5Au84nPKA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-                  <div><iframe width="560" height="315" src="https://www.youtube.com/embed/8eAB2R_gb64" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-                  <div><iframe width="560" height="315" src="https://www.youtube.com/embed/7k-VAlIPzKg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-                </div>
-
-                <div class="container">
-                    <h1 class="subtitle">Live Videos</h1>
+                  <div class="column has-text-centered">
+                    <a
+                      href="./assets/images/Media-photos/980x.jpg"
+                      data-lightbox="demo-lightbox"
+                      data-title="First Image">
+                      <firgure class="image is-3by2">
+                      <img src="./assets/images/Media-photos/980x.jpg" />
+                      </firgure>
+                    </a>
                   </div>
 
-              <section class="section" >
-                      <div class="image-carousel">
-                        <div><center>
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/8eAB2R_gb64" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </center>
-                      </div>
-                      <div><center>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PPhTpFtFmK4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  <div class="column has-text-centered">
+                    <a
+                      href="./assets/images/Media-photos/M1.jpg"
+                      data-lightbox="demo-lightbox"
+                      data-title="Second Image">
+                      <firgure class="image is-3by2">
+                      <img src="./assets/images/Media-photos/M1.jpg" />
+                      </firgure>
+                    </a>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <a
+                      href="./assets/images/Media-photos/M2.jpg"
+                      data-lightbox="demo-lightbox"
+                      data-title="Third Image">
+                      <firgure class="image is-3by2">
+                      <img src="./assets/images/Media-photos/M2.jpg" />
+                      </firgure>
+                    </a>
+                  </div>
+
+          </div>
+
+          <div class="columns">
+
+                    <div class="column has-text-centered">
+                      <a
+                        href="./assets/images/Media-photos/M16.jpeg"
+                        data-lightbox="demo-lightbox"
+                        data-title="First Image">
+                        <firgure class="image is-3by2">
+                        <img src="./assets/images/Media-photos/M16.jpeg" />
+                       </firgure>
+                      </a>
+                    </div>
+
+                    <div class="column has-text-centered">
+                      <a
+                        href="./assets/images/Media-photos/M17.jpeg"
+                        data-lightbox="demo-lightbox"
+                        data-title="Second Image">
+                        <firgure class="image is-3by2">
+                        <img src="./assets/images/Media-photos/M17.jpeg" />
+                        </firgure>
+                      </a>
+                    </div>
+
+                    <div class="column has-text-centered">
+                      <a
+                        href="./assets/images/Media-photos/M19.jpeg"
+                        data-lightbox="demo-lightbox"
+                        data-title="Third Image">
+                        <firgure class="image is-3by2">
+                        <img src="./assets/images/Media-photos/M19.jpeg" />
+                        </firgure>
+                      </a>
+                    </div>
+          </div>
+
+          <div class="columns">
+
+                    <div class="column has-text-centered">
+                      <a
+                        href="./assets/images/Media-photos/M20.jpg"
+                        data-lightbox="demo-lightbox"
+                        data-title="First Image">
+                        <firgure class="image is-3by2">
+                        <img src="./assets/images/Media-photos/M20.jpg" />
+                        </firgure>
+                      </a>
+                    </div>
+
+                    <div class="column has-text-centered">
+                      <a
+                        href="./assets/images/Media-photos/M21.jpg"
+                        data-lightbox="demo-lightbox"
+                        data-title="Second Image">
+                        <firgure class="image is-3by2">
+                        <img src="./assets/images/Media-photos/M21.jpg" />
+                        </firgure>
+                      </a>
+                    </div>
+
+                    <div class="column has-text-centered">
+                      <a
+                        href="./assets/images/Media-photos/M22.jpg"
+                        data-lightbox="demo-lightbox"
+                        data-title="Third Image">
+                        <firgure class="image is-3by2">
+                        <img src="./assets/images/Media-photos/M22.jpg" />
+                        </firgure>
+                      </a>
+                    </div>
+        </div>
+    </div>
+</section>
+
+<div class="container-subtitle">
+  <h1 class="subtitle">Music Videos</h1>
+</div>
+
+  <section class="section" >
+            <div class="image-carousel">
+                <div>
+                  <center>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/eD0j1cfmO5s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </center>
+                </div>
+                <div>
+                    <center>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YWLXETj6CSY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                   </center>
+                </div>
+                <div>
+                  <center>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PPhTpFtFmK4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </center>
+                </div>
+                <div>
+                <center>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/KB5Au84nPKA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </center>
+              </div>
+                <div>
+                <center>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/8eAB2R_gb64" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </center>
+              </div>
+                <div>
+                  <center>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7k-VAlIPzKg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </center>
+                </div>
+            </div>
+
+            <div class="image-carousel1">
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/eD0j1cfmO5s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/YWLXETj6CSY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/PPhTpFtFmK4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/KB5Au84nPKA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/8eAB2R_gb64" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/7k-VAlIPzKg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            </div>
+  </section>
+
+<div class="container-subtitle">
+    <h1 class="subtitle">Live Videos</h1>
+</div>
+
+  <section class="section" >
+        <div class="image-carousel">
+            <div>
+                            <center>
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/8eAB2R_gb64" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </center>
+                          </div>
+            <div>
+                          <center>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PPhTpFtFmK4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                          </center>
+                        </div>
+            <div>
+                          <center>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WM-s9rDSZlA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                          </center>
+                        </div>
+            <div>
+                      <center>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bbW7Wsylggc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                       </center>
                     </div>
-                    <div><center>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/WM-s9rDSZlA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div>
+                      <center>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KycxRfa8X9E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                      </center>
+                    </div>
+            <div>
+                    <center>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/MuWvc3ESHXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </center>
                   </div>
-                  <div><center>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bbW7Wsylggc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  </center>
-                </div>
-                  <div><center>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KycxRfa8X9E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  </center>
-                </div>
-                <div><center>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/MuWvc3ESHXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </center>
-              </div>
-
-                      </div>
-                      <div class="image-carousel1">
-                        <div>
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/8eAB2R_gb64" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                        <div>
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/PPhTpFtFmK4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                        <div>
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/WM-s9rDSZlA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                        <div>
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/bbW7Wsylggc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                        <div>
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/KycxRfa8X9E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                        <div>
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/MuWvc3ESHXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                      </div>
 
 
-            </section>
 
-          </body>
-      <script type="text/javascript" src="../assets/javascripts/jquery.min.js"></script>
-      <script type="text/javascript" src="../assets/javascripts/plugins/slick.min.js"></script>
+
+
+        </div>
+
+        <div class="image-carousel1">
+                          <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/8eAB2R_gb64" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                          </div>
+                          <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PPhTpFtFmK4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                          </div>
+                          <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WM-s9rDSZlA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                          </div>
+                          <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/bbW7Wsylggc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                          </div>
+                          <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KycxRfa8X9E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                          </div>
+                          <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/MuWvc3ESHXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                          </div>
+                        </div>
+  </section>
+
+</body>
+
+
+      <script type="text/javascript" src="./assets/javascripts/jquery.min.js"></script>
+      <script type="text/javascript" src="./assets/javascripts/plugins/slick.min.js"></script>
+      <script src="../assets/javascripts/plugins/lightbox.min.js"></script>
       <script type="text/javascript">
             $(document).ready(function(){
               $('.image-carousel').slick({
