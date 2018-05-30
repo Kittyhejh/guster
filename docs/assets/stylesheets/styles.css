@@ -460,8 +460,8 @@ h3{
     line-height: 1.5;
     color: rgb(33,37,41,0.3)
     text-align: center;
-    width:900px;
-    height:550px;
+    width:700px;
+    height:450px;
     background-color: #f4f1e7;
     box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.5);
 }
@@ -479,13 +479,13 @@ h3{
 
 
 th, td {
-    width:800px;
-    height:50px;
+    width:600px;
+    height:20px;
     text-align: left;
     padding-top: 30px;
     padding-bottom: 0px;
     padding-left: 3px;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .columns:not(:last-child){
