@@ -61,6 +61,35 @@ img {
   color:#4a4a4a;
   background-color:#F5F5F5;
 }
+
+.FI {
+    margin-left: 20px;
+    padding-top: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: inline-block;
+}
+
+.footer{
+  background-color: white;
+  padding:0.5rem 5rem 1rem;
+}
+
+.copyright{
+    font-size: 10pt;
+    float: right;
+    margin-top: 20px;
+    margin-right: 35px;
+    font-weight: 600;
+}
+
+/* .FI {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+} */
 /*
 ----------------------------------------------------------------------------------------------------
  HOMEPAGE STYLES
@@ -175,16 +204,16 @@ img {
 */
 
 .about-introduction1{
-  font-size:25px;
+  font-size:24px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: regular;
 }
 
 .about-introduction2{
-  font-size:25px;
+  font-size:24px;
   color: #ffffff;
   /* padding-left: 100px; */
-  font-weight: bold;
+  font-weight: regular;
 }
 
 .background-about{
